@@ -1,2 +1,441 @@
+Software Requirements Specification (SRS)
 
-hellow
+Volume 1
+
+Chapter 1
+Introduction
+
+Chapter 2
+Technology Stack
+
+Chapter 3
+Overall System Architecture
+
+Chapter 4
+Functional Requirements
+
+Chapter 5
+User Roles
+
+Chapter 6
+Authentication
+
+Chapter 7
+Restaurant Module
+
+Chapter 8
+Branch Module
+
+Chapter 9
+Product Module
+
+Chapter 10
+Category Module
+
+Chapter 11
+Inventory Module
+
+Chapter 12
+Customer Module
+
+Chapter 13
+Shopping Cart
+
+Chapter 14
+Checkout
+
+Chapter 15
+Payment
+
+Chapter 16
+Order Management
+
+Chapter 17
+Kitchen Workflow
+
+Chapter 18
+Delivery Management
+
+Chapter 19
+Live Rider Tracking
+
+Chapter 20
+Reservation
+
+Chapter 21
+Reward Coin
+
+Chapter 22
+Coupon
+
+Chapter 23
+Marketing
+
+Chapter 24
+Accounts
+
+Chapter 25
+Reports
+
+Chapter 26
+Notification
+
+Chapter 27
+Complaint
+
+Chapter 28
+Attendance
+
+Chapter 29
+Analytics
+
+Chapter 30
+Security
+
+Chapter 31
+Performance
+
+Chapter 32
+SEO
+
+Chapter 33
+Database Design
+
+Chapter 34
+REST API
+
+Chapter 35
+Deployment
+
+Chapter 36
+Future Scope
+
+Technology Stack (Chapter 2)
+2.1 Project Overview
+
+Project Name
+
+Enterprise Multi-Restaurant Food Ordering & Delivery Management System
+
+Project Type
+
+Enterprise Grade Web Application + Mobile Application
+
+Target Platform
+
+Web Application
+Android Application
+iOS Application
+Admin Dashboard
+Branch Dashboard
+Rider Application
+Management Dashboard
+
+Deployment Type
+
+Cloud Based
+
+Architecture
+
+Microservice Ready Modular Architecture
+
+2.2 Technology Stack
+Backend
+
+Python 3.13+
+
+Django 5.x
+
+Django REST Framework
+
+JWT Authentication
+
+Celery
+
+Redis
+
+Gunicorn
+
+Nginx
+
+Database
+
+PostgreSQL 16+
+
+Requirements
+
+ACID Compliance
+Foreign Key Constraints
+Index Optimization
+Query Optimization
+Transaction Support
+High Availability Ready
+Frontend (Customer)
+
+Next.js
+
+TypeScript
+
+React
+
+Tailwind CSS
+
+HTML5
+
+CSS3
+
+JavaScript ES6
+
+Progressive Web App (PWA)
+
+Backend Dashboard
+
+Important
+
+The Backend Dashboard UI/UX is already designed using:
+
+HTML5
+CSS3
+Bootstrap 5
+JavaScript
+
+These dashboard templates must be integrated into the Django Backend during development.
+
+The system architecture must allow all existing dashboard pages to be connected without redesigning the interface.
+
+Future dashboard files provided by the client shall be integrated while preserving their original UI/UX.
+
+Mobile Application
+
+Flutter
+
+Dart
+
+Android
+
+iOS
+
+REST API Communication
+
+Firebase Cloud Messaging
+
+Google Maps SDK
+
+Cache Server
+
+Redis
+
+Purpose
+
+Session Cache
+Product Cache
+Branch Cache
+API Cache
+Frequently Ordered Items
+Notification Queue
+Background Processing
+
+Celery
+
+Used For
+
+Notifications
+Emails
+SMS
+Push Notifications
+Order Queue
+Report Generation
+Reward Coin Processing
+Scheduled Tasks
+Backup Tasks
+Web Server
+
+Nginx
+
+Purpose
+
+Reverse Proxy
+Static Files
+Load Balancing
+SSL
+Compression
+Cache
+Deployment
+
+Docker
+
+Docker Compose
+
+GitHub Actions (CI/CD)
+
+Linux Ubuntu Server
+
+Cloudflare
+
+SSL
+
+Storage
+
+Amazon S3
+
+or
+
+Cloudinary
+
+Purpose
+
+Product Images
+Customer Images
+Rider Documents
+Branch Images
+Reports
+Maps
+
+Google Maps Platform
+
+Services
+
+Maps SDK
+Geocoding API
+Reverse Geocoding
+Distance Matrix
+Directions API
+Places API
+Payment Gateway
+
+Primary Payment
+
+bKash
+
+Payment Features
+
+QR Payment
+Payment Verification
+Transaction ID
+Callback Support
+Payment Status
+Refund Ready
+
+Cash on Delivery
+
+Notification Services
+
+Firebase Cloud Messaging
+
+Email
+
+SMS Gateway
+
+In-App Notification
+
+Security Technologies
+
+JWT
+
+HTTPS
+
+SSL
+
+CSRF Protection
+
+XSS Protection
+
+SQL Injection Protection
+
+Password Hashing
+
+Rate Limiting
+
+RBAC
+
+Secure Cookies
+
+OTP Verification
+
+Email Verification
+
+Device Login Tracking
+
+Audit Logs
+
+2.3 Performance Requirements
+
+The application must be designed as an Enterprise-Level High-Traffic Food Delivery Platform, similar in architecture and scalability to Foodpanda or Uber Eats.
+
+Expected Traffic
+
+Daily Orders
+
+2,000–5,000+
+
+Concurrent Users
+
+1,000+
+
+Peak Time
+
+Lunch
+
+Dinner
+
+Weekend
+
+Festival
+
+The application must support thousands of users placing orders simultaneously without noticeable performance degradation.
+
+Performance Goals
+
+Page Load
+
+Less than 2 seconds
+
+API Response
+
+Less than 300 milliseconds (average)
+
+Database Queries
+
+Optimized with indexes.
+
+Caching
+
+Redis Cache.
+
+Image Loading
+
+Lazy Loading
+
+WebP Format
+
+Compression
+
+CDN Ready
+
+Scalability
+
+The system must support horizontal scaling.
+
+Additional servers should be deployable without modifying application logic.
+
+The architecture must support future migration to Kubernetes or cloud-native infrastructure if required.
+
+SEO Requirements
+
+The Web Application must be fully SEO optimized.
+
+Requirements include:
+
+Server-Side Rendering (SSR)
+Dynamic Meta Tags
+Open Graph Tags
+Twitter Cards
+Structured Data (Schema.org)
+XML Sitemap
+Robots.txt
+Canonical URLs
+Clean URL Structure
+Image Alt Attributes
+Performance Optimisation
+Core Web Vitals Compliance
+
